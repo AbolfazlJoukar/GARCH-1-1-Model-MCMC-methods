@@ -127,7 +127,6 @@ DDD=t(DD)
 sigma.tilda2=1/(DDD%*%landa6%*%DD+((1/100)))
 mu.tilda2=(sigma.tilda2)*(DDD%*%landa6%*% RR)
 beta.simu[i]=rtruncnorm(n=1,a=0,b=Inf,mean=mu.tilda2,sd=sqrt(sigma.tilda2))
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------
 H4=Z4=D4=R4=numeric(n)
 for (j in 2:n){
